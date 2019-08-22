@@ -42,14 +42,12 @@ public class ItemService {
     public static int findClosest(Integer arr[], int target)
     {
         int n = arr.length;
-
-        // Corner cases
         if (target <= arr[0])
             return arr[0];
         if (target >= arr[n - 1])
             return arr[n - 1];
 
-        // Doing binary search
+        // do binary search
         int i = 0, j = n, mid = 0;
         while (i < j) {
             mid = (i + j) / 2;

@@ -68,7 +68,7 @@ public class PlayGameService {
         else{
             System.out.println("Game Over");
             result.add("GameOver");
-            result.add(messageResponse.getScore().toString());
+            result.add("With Score  : "+messageResponse.getScore().toString());
         }
         return result;
     }
