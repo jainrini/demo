@@ -25,8 +25,8 @@ Approach to the problem:
     Assign score to set of probabilities and calculate average score.
     For each task ,determined if it lies within the range of high probability of wining or low and then choose the task with       highest reward.
 2. To purchase item :
-    Using the message response API, calculated goldbalance each time and determine the items that can be purchased.
-    Collected items which are less or equal to goldbalance and then determines the item which is nearest to the average cost.
+    Using the message response API, get the gold balance each time and determine the items that can be purchased.
+    Collect items which are less or equal to goldbalance and then purchase the item which is nearest to the average cost.
    
    
 
