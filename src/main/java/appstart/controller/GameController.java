@@ -5,6 +5,7 @@ import appstart.models.*;
 import appstart.services.MessageResponseService;
 import appstart.services.PlayGameService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,18 +32,18 @@ public class GameController
     }
 
     @RequestMapping("/getBestTask/{gameId}")
-    public TasksOfGame getBestTask(@RequestParam String gameId){
+    public TasksOfGame getBestTask(@PathVariable String gameId){
         TasksOfGame tasks = playGameService.getBestTask(gameId);
         return tasks;
     }
 
     @RequestMapping("/getItems/{gameId}")
-    public List<Item> getItems(@RequestParam String gameId){
+    public List<Item> getItems(@PathVariable String gameId){
         return playGameService.getItemsToPurchase(gameId);
     }
 
     @RequestMapping("/solve/{gameId}/{taskId}")
-    public MessageResponse getItems(@RequestParam String gameId,@RequestParam String taskId){
+    public MessageResponse getItems(@PathVariable String gameId,@PathVariable String taskId){
         return messageResponseService.solveTask(gameId,taskId);
     }
 

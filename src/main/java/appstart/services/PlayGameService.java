@@ -50,13 +50,14 @@ public class PlayGameService {
                 Item item = itemService.purchaseItemWith(goldBalance, itemsToPurchase);
                 itemService.purchaseItem(game.getGameId(),item.getId());
                 playGame(game);
-            } else if (goldBalance>300 && goldBalance <350) {
-                System.out.println("gold balance is greater than 350");
+            } else if (goldBalance>150&& goldBalance<300) {
+                System.out.println("gold balance is greater than 100 less than 300");
                 Item item = itemService.purchaseItemWith(goldBalance, itemsToPurchase);
                 itemService.purchaseItem(game.getGameId(),item.getId());
                 playGame(game);
-            } else if (goldBalance>100 && goldBalance<300) {
-                System.out.println("gold balance is greater than 100 less than 300");
+            }
+            else if (goldBalance>300 && goldBalance <350) {
+                System.out.println("gold balance is greater than 350");
                 Item item = itemService.purchaseItemWith(goldBalance, itemsToPurchase);
                 itemService.purchaseItem(game.getGameId(),item.getId());
                 playGame(game);

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a34ec0d-2d38-4ac8-bec9-b7926bfbd0ad" name="Default Changelist" comment="" />
+    <list default="true" id="4a34ec0d-2d38-4ac8-bec9-b7926bfbd0ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appstart/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appstart/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appstart/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/controller/GameController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appstart/services/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/services/ItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appstart/services/PlayGameService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/services/PlayGameService.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +27,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1PW1eYmSXqSrLcEKILVmrsqMWMl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/appstart" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -52,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AppApplication (1)">
+  <component name="RunManager" selected="Application.GameApplication">
     <configuration name="AppApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="appstart.AppApplication" />
       <module name="GameAPI" />
@@ -79,8 +93,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="appstart.GameApplication" />
+      <module name="GameAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="appstart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GameApplication" />
         <item itemvalue="Application.AppApplication (1)" />
         <item itemvalue="Application.AppApplication" />
       </list>
@@ -99,23 +127,54 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java</url>
-          <line>67</line>
+          <line>68</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java</url>
-          <line>68</line>
+          <line>69</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java</url>
-          <line>69</line>
+          <line>70</line>
           <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
