@@ -3,16 +3,16 @@ Import and build the Maven Project
 Run the GameApplication.class
 When the server is up you can use below APIs:
 1.start game: localhost:8080/game/start
-This will start the game and provide Game details like gameId
+This will start a game and provide Game details like gameId.
 
 2.get best Task :http://localhost:8080/game/getBestTask/{gameId}
-Using the previous response you can pass the gameId to get the bestTask
+Using the previous response you can pass the gameId to get the bestTask for a game.
 
 3.get Items :http://localhost:8080/game/getItems/{itemId}
-Using the response from 1 , you can get the list of items available 
+Using the response from 1 , you can get the list of items available for a game.
 
 4.solve task : http://localhost:8080/solve/{gameId}/{taskId}
-Using the response from 1 ,2 we can use this to get the result on solving task for a game.
+Using the response from 1 ,2 get gameId and taskId and use this to get the result on solving task for a game.
 
 5.play game :http://localhost:8080/game/play
 This will start a new game , fetch the best task and chooses items for purchase .
