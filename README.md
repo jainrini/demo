@@ -21,12 +21,12 @@ It will continiue to choose the best task and purchase untill the player's lives
 
 Approach to the problem:
 
-1. To get the best Task
+1. To get the best Task:
     Assign score to set of probabilities and calculate average score.
-    For each task ,determined if it lies with highprobability of wining or less and then choose the task with highest reward.
-2. To purchase item
-   Using the message response API, calculated goldbalance each time and determine the items that can be purchased.
-   Collected items which are less or equal to goldbalance and then determines the item which is nearest to the average cost.
+    For each task ,determined if it lies within the range of high probability of wining or low and then choose the task with       highest reward.
+2. To purchase item :
+    Using the message response API, calculated goldbalance each time and determine the items that can be purchased.
+    Collected items which are less or equal to goldbalance and then determines the item which is nearest to the average cost.
    
    
 
