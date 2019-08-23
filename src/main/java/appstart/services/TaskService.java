@@ -59,7 +59,9 @@ public class TaskService {
         else {
             //getTask with highest reward
             //Task task = withMinProbability.stream().filter(h -> h.getReward() != null).max(Comparator.comparing(Task::getReward)).get();
-            sortByReward(withHighestProbability);
+            withMinProbability.stream().forEach(t->Integer.parseInt(t.getReward()));
+            //Task task = withHighestProbability.stream().max(Comparator.comparing(Task::getReward)).orElseThrow(NoSuchElementException::new);
+            sortByReward(withMinProbability);
             return withMinProbability.get(0);
         }
     }
