@@ -2,7 +2,6 @@ package appstart.models;
 
 
 public class Task{
-
     private String adId;
     private String message;
     private String reward;
