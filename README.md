@@ -2,6 +2,10 @@
 Import the project as maven  and build the project.
 Run the GameApplication.class
 When the server is up you can use below APIs:
+
+Note : If port 8080 is already in use, you can configure in src/main/resources/application.properties as below:
+server.port={PORT_NUMBER}
+
 1.start game: localhost:8080/game/start
 This will start a game and provide Game details like gameId.
 
