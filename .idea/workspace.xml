@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4a34ec0d-2d38-4ac8-bec9-b7926bfbd0ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appstart/services/PlayGameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/appstart/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appstart/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/appstart/services/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/services/ItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/appstart/services/PlayGameService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/services/PlayGameService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/appstart/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/controller/GameController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/appstart/services/TaskService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/services/TaskService$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/appstart/services/TaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/appstart/services/TaskService.class" afterDir="false" />
     </list>
@@ -161,6 +160,44 @@
           <url>file://$PROJECT_DIR$/src/main/java/appstart/services/ItemService.java</url>
           <line>39</line>
           <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>54</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/appstart/services/TaskService.java</url>
+          <line>77</line>
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

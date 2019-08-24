@@ -30,7 +30,6 @@ public class GameController
         Game game = playGameService.startGame();
         return game;
     }
-
     @RequestMapping("/getBestTask/{gameId}")
     public TasksOfGame getBestTask(@PathVariable String gameId){
         TasksOfGame tasks = playGameService.getBestTask(gameId);

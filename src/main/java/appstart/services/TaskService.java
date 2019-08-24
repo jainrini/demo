@@ -1,6 +1,5 @@
 package appstart.services;
 
-import appstart.models.Game;
 import appstart.models.Task;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -50,20 +49,45 @@ public class TaskService {
                 }
             }
         });
+
         if(!withHighestProbability.isEmpty()) {
-            withHighestProbability.stream().forEach(t->Integer.parseInt(t.getReward()));
+            List<Task> highExpiry = withHighestExipry(withHighestProbability);
+            highExpiry.stream().forEach(t->Integer.parseInt(t.getReward()));
             //Task task = withHighestProbability.stream().max(Comparator.comparing(Task::getReward)).orElseThrow(NoSuchElementException::new);
-            sortByReward(withHighestProbability);
-            return withHighestProbability.get(0);
+            sortByReward(highExpiry);
+            return highExpiry.get(0);
         }
         else {
             //getTask with highest reward
             //Task task = withMinProbability.stream().filter(h -> h.getReward() != null).max(Comparator.comparing(Task::getReward)).get();
-            withMinProbability.stream().forEach(t->Integer.parseInt(t.getReward()));
+            List<Task> highExpiry = withHighestExipry(withMinProbability);
+            highExpiry.stream().forEach(t->Integer.parseInt(t.getReward()));
             //Task task = withHighestProbability.stream().max(Comparator.comparing(Task::getReward)).orElseThrow(NoSuchElementException::new);
-            sortByReward(withMinProbability);
-            return withMinProbability.get(0);
+            sortByReward(highExpiry);
+            return highExpiry.get(0);
         }
+    }
+
+    private List<Task> withHighestExipry(List<Task> withHighestProbability) {
+        int avgExpiry = withHighestProbability
+                .stream()
+                .map(Task::getExpiresIn)
+                .reduce(0, Integer::sum) / withHighestProbability.size();
+        List<Task> withHighExpiry= new ArrayList<>();
+        List<Task> lowExpiry= new ArrayList<>();
+        for(Task t:withHighestProbability){
+            if(t.getExpiresIn()>avgExpiry){
+                withHighExpiry.add(t);
+            }
+            else {
+                lowExpiry.add(t);
+            }
+        }
+        if(withHighExpiry.isEmpty()){
+            return lowExpiry;
+        }
+        return withHighExpiry;
+
     }
 
     private void sortByReward(List<Task> task) {
