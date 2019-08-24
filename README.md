@@ -23,7 +23,8 @@ Using the response from 1 ,2 get gameId and taskId and use this to get the resul
 5.play game :http://localhost:8080/game/play
 This will start a new game , fetch the best task and chooses items for purchase .
 It will continiue to choose the best task and purchase untill the player's lives run out.
-
+You can view the console statements and wait for the final response on browser.
+Please refer snippets : Intellij screenshot and API response .
 
 Approach to the problem:
 
