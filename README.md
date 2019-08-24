@@ -1,5 +1,5 @@
 # demo
-Import and build the Maven Project
+Import the project as maven  and build the project.
 Run the GameApplication.class
 When the server is up you can use below APIs:
 1.start game: localhost:8080/game/start
