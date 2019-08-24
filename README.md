@@ -1,5 +1,5 @@
 # demo
-Import and build the Maven Project
+Import the project as maven  and build the project.
 Run the GameApplication.class
 When the server is up you can use below APIs:
 1.start game: localhost:8080/game/start
@@ -23,7 +23,8 @@ Approach to the problem:
 
 1. To get the best Task:
     Assign score to set of probabilities and calculate average score.
-    For each task ,determined if it lies within the range of high probability of wining or low and then choose the task with       highest reward.
+    For each task ,determined if it lies within the range of high probability of wining or low and then choose the tasks 
+    which has expiry more than average and then finally retrieving the highest reward task.
 2. To purchase item :
     Using the message response API, get the gold balance each time and determine the items that can be purchased.
     Collect items which are less or equal to goldbalance and then purchase the item which is nearest to the average cost.
