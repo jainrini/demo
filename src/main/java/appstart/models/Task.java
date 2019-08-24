@@ -7,7 +7,6 @@ public class Task{
     private String message;
     private String reward;
     private Integer expiresIn;
-    private Integer encrypted;
     private String probability;
 
     public String getAdId() {
@@ -42,24 +41,12 @@ public class Task{
         this.expiresIn = expiresIn;
     }
 
-    public Integer getEncrypted() {
-        return encrypted;
-    }
-
-    public void setEncrypted(Integer encrypted) {
-        this.encrypted = encrypted;
-    }
-
     public String getProbability() {
         return probability;
     }
 
     public void setProbability(String probability) {
         this.probability = probability;
-    }
-
-    public boolean encryptionLevelIs(int level) {
-        return this.getEncrypted() != null && this.getEncrypted() == level;
     }
 
 

@@ -51,7 +51,7 @@ public class TaskService {
         });
 
         if(!withHighestProbability.isEmpty()) {
-            List<Task> highExpiry = withHighestExipry(withHighestProbability);
+            List<Task> highExpiry = withHighExpiry(withHighestProbability);
             highExpiry.stream().forEach(t->Integer.parseInt(t.getReward()));
             //Task task = withHighestProbability.stream().max(Comparator.comparing(Task::getReward)).orElseThrow(NoSuchElementException::new);
             sortByReward(highExpiry);
@@ -60,7 +60,7 @@ public class TaskService {
         else {
             //getTask with highest reward
             //Task task = withMinProbability.stream().filter(h -> h.getReward() != null).max(Comparator.comparing(Task::getReward)).get();
-            List<Task> highExpiry = withHighestExipry(withMinProbability);
+            List<Task> highExpiry = withHighExpiry(withMinProbability);
             highExpiry.stream().forEach(t->Integer.parseInt(t.getReward()));
             //Task task = withHighestProbability.stream().max(Comparator.comparing(Task::getReward)).orElseThrow(NoSuchElementException::new);
             sortByReward(highExpiry);
@@ -68,7 +68,7 @@ public class TaskService {
         }
     }
 
-    private List<Task> withHighestExipry(List<Task> withHighestProbability) {
+    private List<Task> withHighExpiry(List<Task> withHighestProbability) {
         int avgExpiry = withHighestProbability
                 .stream()
                 .map(Task::getExpiresIn)
