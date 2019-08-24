@@ -30,7 +30,7 @@ Approach to the problem:
 
 1. To get the best Task:
     Assign score to set of probabilities and calculate average score.
-    For each task ,determined if it lies within the range of high probability of wining or low and then choose the tasks 
+    For each task ,determine if it lies within the range of high probability of wining or low and then choose the tasks 
     which has expiry more than average and then finally retrieving the highest reward task.
 2. To purchase item :
     Using the message response API, get the gold balance each time and determine the items that can be purchased.
